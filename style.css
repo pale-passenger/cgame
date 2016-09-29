@@ -3,7 +3,6 @@
 h1 {
 	font-family: 'Baloo Bhai', cursive;
 	font-size: 35px;
-	color: #4caf50;
 	cursor: pointer;
 	margin-left: 100px;
 	float: left;
@@ -24,25 +23,30 @@ h2 {
 	font-size: 20px;
 	font-weight: lighter;
 	margin-right: 50px;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 h1 a {
 	text-decoration: none;
-	color: unset;
+	color: #4caf50;
 }
+
 @media screen and (max-width: 1000px) {
 	h1 {
 		text-align: center;
-		float: unset;
-		margin: unset;
+		float: none;
+		margin: 0px;
 	}
 	h2 {
-		margin: unset;
+		margin-left: 105px;
+		margin-top: -10px;
 		text-align: center;
-		float: unset;
-		margin-left: 55px;
-		
+		float: none;		
+	}
+}
+@media screen and (max-width: 383px) {
+	h2 {
+		display: none;
 	}
 }
 
