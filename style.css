@@ -1,0 +1,50 @@
+﻿/*Home*/
+
+h1 {
+	font-family: 'Baloo Bhai', cursive;
+	font-size: 35px;
+	color: #4caf50;
+	cursor: pointer;
+	margin-left: 100px;
+	float: left;
+	margin-top: -5px;
+}
+
+.firstname {
+	color: #555555;
+}
+
+.firstname:hover {
+	color: #4caf50;
+}
+
+h2 {
+	font-family: 'Ubuntu', sans-serif;
+	float: right;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-right: 50px;
+	margin-top: 5px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: unset;
+}
+@media screen and (max-width: 1000px) {
+	h1 {
+		text-align: center;
+		float: unset;
+		margin: unset;
+	}
+	h2 {
+		margin: unset;
+		text-align: center;
+		float: unset;
+		margin-left: 55px;
+		
+	}
+}
+
+/*%Home*/
+
