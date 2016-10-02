@@ -1,23 +1,40 @@
-﻿/*Home*/
+﻿@font-face {
+	font-family: Ubuntu;
+	src: url(fonts/Ubuntu-Regular.ttf);
+}
 
-h1 {
+@font-face {
+	font-family: Baloo Bhai;
+	src: url(fonts/BalooBhai-Regular.ttf);
+}
+
+
+/*Home*/
+
+
+#Home {
+	min-height: 55px;
+}
+
+#Home h1 {
 	font-family: 'Baloo Bhai', cursive;
 	font-size: 35px;
 	cursor: pointer;
 	margin-left: 100px;
 	float: left;
 	margin-top: -5px;
+	margin-bottom: -10px;
 }
 
-.firstname {
+#Home .firstname {
 	color: #555555;
 }
 
-.firstname:hover {
+#Home .firstname:hover {
 	color: #4caf50;
 }
 
-h2 {
+#Home h2 {
 	font-family: 'Ubuntu', sans-serif;
 	float: right;
 	font-size: 20px;
@@ -26,29 +43,124 @@ h2 {
 	margin-top: 10px;
 }
 
-h1 a {
+#Home h1 a {
 	text-decoration: none;
 	color: #4caf50;
 }
 
 @media screen and (max-width: 1000px) {
-	h1 {
-		text-align: center;
-		float: none;
-		margin: 0px;
-	}
-	h2 {
-		margin-left: 105px;
-		margin-top: -10px;
-		text-align: center;
-		float: none;		
-	}
+
+#Home {
+	min-height: 80px;
 }
+
+#Home h1 {
+ 	float: none;
+ 	text-align: center;
+ 	margin: 0;
+ }
+
+#Home h2 {
+	float: none;
+	text-align: center;
+	margin: 0;
+	margin-left: 55px;
+}
+
+}
+
 @media screen and (max-width: 383px) {
-	h2 {
+
+	#Home {
+		min-height: 55px;
+	}
+
+	#Home h2 {
 		display: none;
 	}
 }
 
+
 /*%Home*/
 
+
+/*Navbar*/
+
+
+#Navbar.fixed {
+	top: 0;
+	min-width: 120%;
+	position: fixed;
+}
+
+#Navbar .dropdown-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #4caf50;
+	width: 120%;
+	margin-left: -10px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+#Navbar .fa {
+	font-size: 24px;
+	margin: -5px;
+}
+
+#Navbar li {
+	float: left;
+}
+
+#Navbar li.dropdown {
+	display: inline-block;
+}
+
+#Navbar li a {
+	font-family: 'Ubuntu', sans-serif;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+#Navbar .dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 150px;
+	background-color: #4caf50;
+	box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+}
+
+#Navbar .dropdown-content a {
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-size: 18px;
+}
+
+#Navbar .dropdown:hover .dropdown-content {
+	display: block;
+	background-color: #555555;
+}
+
+#Navbar .dropdown:hover {
+	background-color: #555555;
+}
+
+#Navbar .dropdown-content a:hover {
+	background-color: seagreen;
+	box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2)
+}
+
+
+/*%Navbar*/
+
+p {
+	font-size: 40px;
+	
+}
