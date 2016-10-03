@@ -104,20 +104,11 @@
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
 }
 
-#Navbar .fa {
-	font-size: 24px;
-	margin: -5px;
-}
-
-#Navbar li {
+#Navbar .dropdown {
 	float: left;
 }
 
-#Navbar li.dropdown {
-	display: inline-block;
-}
-
-#Navbar li a {
+#Navbar .dropdown a {
 	font-family: 'Ubuntu', sans-serif;
 	display: block;
 	color: white;
@@ -157,6 +148,68 @@
 	box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2)
 }
 
+#Navbar .dropdown-menu {
+	display: none;
+}
+
+@media screen and (max-width: 383px) {
+
+#Navbar .menu {
+	display: none;
+}
+
+#Navbar .dropdown-menu {
+	display: block;
+	max-width: 50px;
+}
+
+#Navbar .dropdown-menu .dropdown{
+	float: none;
+	min-width: 100px;
+	display: none;
+}
+
+#Navbar .dropdown-menu .button {
+	display: block;
+	text-align: left;
+	padding: 14px 16px;
+	font-size: 18px;
+	max-width: 55px;
+	overflow: hidden;
+}
+
+#Navbar .button a{
+	text-align: left;
+	color: white;
+}
+
+#Navbar .dropdown-menu .dropdown a{
+	text-align: left;
+}
+
+#Navbar .dropdown-menu .dropdown-content {
+	position: absolute;
+	left: 98px;
+	margin-top: -49px;
+}
+
+#Navbar .button:hover {
+	background-color: #555555;
+}
+
+#Navbar .dropdown-menu:hover .dropdown {
+	display: block;
+}
+
+}
+
+#Navbar .dropdown-menu .dropdown-content.fixed {
+	position: absolute;
+	left: 90px;
+}
+
+}
+
 
 /*%Navbar*/
 
@@ -164,3 +217,34 @@ p {
 	font-size: 40px;
 	
 }
+
+
+
+
+/*
+#Navbar .dropdown:hover .dropdown-content {
+	display:;	
+	left: 200px;
+}
+
+#Navbar .fa-bars {
+	padding: 14px 16px;
+	display: block;
+	text-align: left;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+
+#Navbar li {
+	float: none;
+}
+
+#Navbar li a {
+	text-align: left;
+}
+
+*/
