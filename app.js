@@ -33,10 +33,10 @@ $(function(){
 
 $(function(){
 	$(window).scroll(function(){
-		if($(this).scrollTop()>60) {
+		if($(window).width()<383) {
 			$('.dropdown-content').addClass('fixed');
 		}
-		else if($(this).scrollTop()<60){
+		else if($(window).width()>383) {
 			$('.dropdown-content').removeClass('fixed');
 		}
 	});
